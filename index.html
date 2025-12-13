@@ -1,1 +1,35 @@
 
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Doge App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Doge App</h1>
+
+<div id="auth">
+  <h2>Login</h2>
+  <input id="email" type="email" placeholder="Email">
+  <input id="password" type="password" placeholder="Senha">
+  <button onclick="login()">Entrar</button>
+
+  <h2>Registrar</h2>
+  <input id="rname" placeholder="Nome">
+  <input id="remail" type="email" placeholder="Email">
+  <input id="rpassword" type="password" placeholder="Senha">
+  <button onclick="register()">Registrar</button>
+</div>
+
+<div id="app" style="display:none;">
+  <h2>Dashboard</h2>
+  <button onclick="loadSteps()">Ver Steps</button>
+  <button onclick="withdraw()">Withdraw</button>
+  <pre id="output"></pre>
+</div>
+
+<script src="app.js"></script>
+</body>
+    </html>

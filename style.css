@@ -1,10 +1,46 @@
 body {
   font-family: Arial, sans-serif;
+  background: #f4f6f8;
   padding: 20px;
 }
 
-input, button {
-  display: block;
+h1, h2 {
+  color: #333;
+}
+
+#auth, #app {
+  background: #fff;
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
   margin: 8px 0;
-  padding: 8px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0059c1;
+}
+
+pre {
+  background: #eee;
+  padding: 10px;
+  overflow-x: auto;
 }

@@ -1,35 +1,75 @@
-
 <!DOCTYPE html>
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
   <title>Doge App</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-<h1>Doge App</h1>
+  <h1>Doge App</h1>
 
-<div id="auth">
-  <h2>Login</h2>
-  <input id="email" type="email" placeholder="Email">
-  <input id="password" type="password" placeholder="Senha">
-  <button onclick="login()">Entrar</button>
+  <!-- AUTENTICAÇÃO -->
+  <div id="auth">
+    <h2>Login</h2>
 
-  <h2>Registrar</h2>
-  <input id="rname" placeholder="Nome">
-  <input id="remail" type="email" placeholder="Email">
-  <input id="rpassword" type="password" placeholder="Senha">
-  <button onclick="register()">Registrar</button>
-</div>
+    <input
+      id="email"
+      type="email"
+      placeholder="Email"
+      required
+    >
 
-<div id="app" style="display:none;">
-  <h2>Dashboard</h2>
-  <button onclick="loadSteps()">Ver Steps</button>
-  <button onclick="withdraw()">Withdraw</button>
-  <pre id="output"></pre>
-</div>
+    <input
+      id="password"
+      type="password"
+      placeholder="Senha"
+      required
+    >
 
-<script src="app.js"></script>
+    <button type="button" onclick="login()">Entrar</button>
+
+    <hr>
+
+    <h2>Registrar</h2>
+
+    <input
+      id="rname"
+      type="text"
+      placeholder="Nome"
+      required
+    >
+
+    <input
+      id="remail"
+      type="email"
+      placeholder="Email"
+      required
+    >
+
+    <input
+      id="rpassword"
+      type="password"
+      placeholder="Senha"
+      required
+    >
+
+    <button type="button" onclick="register()">Registrar</button>
+  </div>
+
+  <!-- APP -->
+  <div id="app" style="display: none;">
+    <h2>Dashboard</h2>
+
+    <button type="button" onclick="loadSteps()">Ver Steps</button>
+    <button type="button" onclick="withdraw()">Withdraw</button>
+
+    <pre id="output"></pre>
+  </div>
+
+  <!-- SCRIPT -->
+  <script src="./app.js"></script>
+
 </body>
-    </html>
+</html>

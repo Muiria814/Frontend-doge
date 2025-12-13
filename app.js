@@ -1,3 +1,10 @@
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+const rname = document.getElementById('rname');
+const remail = document.getElementById('remail');
+const rpassword = document.getElementById('rpassword');
+const output = document.getElementById('output');
+
 const API = 'https://backend-doge.vercel.app/api';
 
 async function login() {

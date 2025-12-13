@@ -1,6 +1,4 @@
-
-const API = 'https://backend-doge-1.onrender.com/api';
-// se estiver no mesmo projeto Vercel, pode ser apenas: const API = '/api';
+const API = 'https://backend-doge.vercel.app/api';
 
 async function login() {
   const res = await fetch(`${API}/login`, {
@@ -59,4 +57,4 @@ async function withdraw() {
 
   const data = await res.json();
   output.textContent = JSON.stringify(data, null, 2);
-  }
+}
